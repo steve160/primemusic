@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>prime Music - Songs</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/pov.jpg" alt="Steven Logo">
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="music.html" class="active">Music</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="menu-toggle">&#9776;</div>
+  </nav>
+
+  <!-- Music Section -->
+  <section class="music-page">
+    <h1>My Music</h1>
+    <p>Listen to my latest releases below 🎧</p>
+
+    <div class="song-list">
+
+      <!-- Song Card 1 -->
+      <div class="song-card">
+        <img src="img/wwy.jpg" alt="Where Were You">
+        <h3>Where Were You</h3>
+        <audio controls>
+          <source src="songs/empire.mp3" type="audio/mpeg">
+          Your browser does not support the audio element.
+        </audio>
+		<p class="song-description">
+         "Where Were You" dives into the raw emotions of heartbreak and loneliness. 
+         It reflects on the moments when people claim to care, but are absent when it matters most. 
+         The song combines soulful melodies with thought-provoking lyrics, creating an intimate connection 
+         with anyone who has felt unseen or unheard. A journey through pain, reflection, and eventual strength.
+       </p>
+		<!-- Download Button -->
+        <a href="songs/empire.mp3" download class="download-btn">Download</a>
+      </div>
+
+      <!-- Song Card 2 -->
+      <div class="song-card">
+        <img src="img/sd.jpg" alt="Another Song">
+        <h3>shattered dream</h3>
+        <audio controls>
+          <source src="songs/shattered dream.mp3" type="audio/mpeg">
+        </audio>
+		<!-- Download Button -->
+        <a href="songs/shattered dream.mp3" download class="download-btn">Download</a>
+      </div>
+      
+	  <!--song card 3-->
+	  <div class="song-card">
+        <img src="img/fin.jpg" alt="Another Song">
+        <h3>feel alright</h3>
+        <audio controls>
+          <source src="songs/feel alright.mp3" type="audio/mpeg">
+        </audio>
+		<!-- Download Button -->
+        <a href="songs/feel alright.mp3" download class="download-btn">Download</a>
+      </div>
+	  
+	  <!--song card 4-->
+	  <div class="song-card">
+        <img src="img/lon.jpg" alt="Another Song">
+        <h3>lonely</h3>
+        <audio controls>
+          <source src="songs/lonely.mp3" type="audio/mpeg">
+        </audio>
+		<!-- Download Button -->
+        <a href="songs/lonely.mp3" download class="download-btn">Download</a>
+      </div>
+
+      <!-- Add more songs here -->
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Prime Music | All Rights Reserved</p>
+   <div class="socials">
+      <a href="https://www.instagram.com/_empireprime?igsh=MW9vMG43b200Z2diNg%3D%3D&utm_source=qr">Instagram</a> |
+      <a href="https://www.tiktok.com/@_empireprime_?_t=ZM-8zeGzajJzXR&_r=1">TikTok</a> |
+      <a href="https://youtube.com/channel/UCl9-EjrmFSWi7t0tULyg_PQ?si=dWCUFmd5ePcBdYHg">YouTube</a>
+    </div>
+  </footer>
+
+  <script>
+    // Toggle mobile menu
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    const navbar = document.querySelector('.navbar');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Change navbar on scroll
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prime Music-About</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/pov.jpg" alt="Steven Logo">
+      </a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="music.html">Music</a></li>
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="menu-toggle">&#9776;</div>
+  </nav>
+
+  <!-- About Section -->
+  <section class="about-hero">
+  <div class="about-content">
+    <h1>About Me</h1>
+    <p>
+      Empireprime is a fast-rising artist whose sound blends emotion and rhythm, 
+      creating music that resonates with real-life experiences. 
+      His journey began with a deep love for storytelling through melodies, 
+      turning everyday struggles and victories into powerful songs that speak 
+      directly to the heart. 
+      <br><br>
+      Growing up surrounded by different sounds and cultures, Empireprime drew 
+      inspiration from both his environment and personal experiences. 
+      Over time, he developed a unique style marked by raw authenticity, 
+      passion, and a voice that carries truth. His music doesn’t just entertain — 
+      it heals, inspires, and gives a voice to unspoken emotions. 
+      <br><br>
+      With persistence and vision, Empireprime continues to grow as an artist, 
+      pushing boundaries and creating timeless records that connect deeply with 
+      listeners worldwide. For him, music is more than sound — it’s a movement, 
+      a message, and a reminder that no matter the darkness, there’s always 
+      light in the rhythm. 
+    </p>
+  </div>
+</section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Prime Music | All Rights Reserved</p>
+    <div class="socials">
+      <a href="https://www.instagram.com/_empireprime?igsh=MW9vMG43b200Z2diNg%3D%3D&utm_source=qr">Instagram</a> |
+      <a href="https://www.tiktok.com/@_empireprime_?_t=ZM-8zeGzajJzXR&_r=1">TikTok</a> |
+      <a href="https://youtube.com/channel/UCl9-EjrmFSWi7t0tULyg_PQ?si=dWCUFmd5ePcBdYHg">YouTube</a>
+    </div>
+  </footer>
+
+  <script>
+    // Toggle mobile menu
+    const menuToggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    const navbar = document.querySelector('.navbar');
+
+    menuToggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+
+    // Change navbar on scroll
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+  </script>
+
+</body>
+</html>
